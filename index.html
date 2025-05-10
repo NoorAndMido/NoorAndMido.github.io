@@ -16,9 +16,11 @@
     <!-- <meta property="og:image" content="http:/midoassran.ca/mido.png"> -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Playwrite+AU+SA:wght@100..400&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -28,34 +30,37 @@
 
 </head>
 <style>
-.alex-brush-regular {
-  font-family: "Alex Brush", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-.bodoni-moda {
-  font-family: "Bodoni Moda", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
 .section-header {
-	font-family: "Bodoni Moda", serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.our-name {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.our-date {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 200;
 }
 body{
-    font: 300 14px bodoni-moda;
+    font-family: "Cormorant Garamond", serif;
 }
 dt {
-    font-size: 22px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 dd {
     font-size: 18px;
 }
 .address {
+    font-size: 24px;
     line-height: 1.4;
 }
 p {
-    font: 300 16px Charter,Georgia,serif;
+    font-size: 18px;
     line-height: 1.5;
 }
 b {
@@ -63,15 +68,20 @@ b {
     font-style: italic;
 }
 a {
-    color: #008acb;
+    color: #958160;
+}
+a:hover {
+    color: #958160;
 }
 .nav-link {
-    font: 300 16px Charter,Georgia,serif;
     color: black !important;
 }
 .nav-link.active {
-    background-color: #F1F1F1 !important;
+    background-color: #FFF !important;
     color: black !important;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
 }
 .card {
     border: none;
@@ -86,7 +96,7 @@ a {
     border: none;
 }
 .card-columns {
-    column-count: 4;
+    column-count: 2;
 }
 @media (max-width: 991.98px) {
     .card-columns {
@@ -101,28 +111,16 @@ a {
 </style>
 <body>
 
-    <nav class="text-center mb-4 px-0 py-3 sticky-top navbar navbar-expand-md navbar-light" style="background-color:white; z-index: 10000;">
+    <nav class="text-center my-5 px-0 py-5 navbar navbar-light h-100">
+
         <!-- Nav tabs -->
         <div class="mx-auto px-0">
-
-            <div class="pt-2 text-center w-100">
-                <img class="img-fluid" style="max-width: 250px;" src="photos/fbs-nav.png"><br/><br/>
-                <h2 class="alex-brush-regular"><i>Noor & Mido</i></h2>
-                <div class="address py-1 pb-2">
-                    October 16th, 2025<br/>
-                    Banff, Canada<br/>
-                </div>
-            </div>
-
             <ul class="nav nav-pills text-center">
                 <li class="nav-item">
                 <a class="nav-link active" data-toggle="tab" href="#about">The Big Day</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#itinerary">The Week Of</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#explore">Explore Banff</a>
+                <a class="nav-link" data-toggle="tab" href="#itinerary">Explore Banff</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#travel">Travel</a>
@@ -140,68 +138,75 @@ a {
 
         <!-- [About] -->
         <div class="tab-pane container active" id="about">
-            <img class="rounded img-fluid img-thumbnail mb-4" src="photos/fbs.png">
-            <h5 class="section-header">The Wedding Day</h5>
+            <div class="pb-4">
+                <h1 class="our-name">Noor & Mahmoud</h1>
+                <h4 class="our-date">14 &ndash; 16 October 2025</h4>
+                <h4 class="our-date">Banff, Canada</h3>
+            </div>
+            <img class="img-fluid mb-5" src="photos/fbs.png">
+            <h5 class="section-header mt-5 pt-5">The Wedding Day</h5>
             <hr>
-
-            <div class="container">
+            <div class="container px-0">
                 <div class="row">
                     <div class="col-sm">
-                        <img class="rounded img-fluid" src="photos/collage.png">
+                        <img class="rounded img-fluid" src="photos/eng.png">
                     </div>
                     <div class="col-sm my-auto">
                         <dl>
-                            <dt>October 16th, 2025</dt>
+                            <dt>16 October 2025</dt>
                             <dd>4pm &ndash; 11pm</dd><br/>
                             <dt>Fairmont Banff Springs</dt>
                             <dd>405 Spray Avenue, Banff, Canada</dd>
                         </dl>
                         <p>
-                        The wedding will take place at the <a href="https://www.fairmont.com/en/hotels/banff/fairmont-banff-springs.html">Fairmont Banff Springs</a>, located inside <a href="https://parks.canada.ca/pn-np/ab/banff">Banff National Park</a>, nestled within the Canadian Rockies at the base of Rundle Mountain.
-                        The <b style="text-decoration: underline">reception is black tie</b>, but feel free to sport <a href="https://en.wikipedia.org/wiki/Gorpcore">granola gorpcore attire</a> throughout the week.
+                        The wedding will take place at the <a href="https://www.fairmont.com/en/hotels/banff/fairmont-banff-springs.html">Fairmont Banff Springs</a>, located in the heart of <a href="https://parks.canada.ca/pn-np/ab/banff">Banff National Park</a>, nestled within the Canadian Rockies at the base of Rundle Mountain.
+                        While the <b style="text-decoration: underline">reception is black tie</b>, you're more than welcome to sport <a href="https://en.wikipedia.org/wiki/Gorpcore">granola gorpcore attire</a> throughout the week.
                         </p>
                         <br/><br/>
                         <button type="button" class="btn btn-dark">RSVP</button>
                     </div>
                 </div>
-				<br/><br/><br/><br/><hr><br/><br/><br/><br/>
             </div>
-
+        <br/><br/><br/><br/><hr><br/><br/><br/><br/>
         </div>
 
 
         <!-- [Selected pubs] -->
         <div class="tab-pane container fade" id="itinerary">
-            <h5 class="section-header"><i>Itinerary</i></h5>
+            <h5 class="section-header">Schedule</h5>
             <hr>
             <div class="container">
-                <div class="row">
+                <div class="row pb-5 mb-5 pt-5">
                     <div class="col-sm my-auto">
                         <dl>
-                            <dt>October 15th, 2025</dt>
-                            <dd>(9am &ndash; 12pm) Sundance Loop Ride</dd>
-                            <dd>(3pm &ndash; 5pm) Natural Hot Springs</dd>
-                            <dd>(8pm &ndash; 11pm) Sushi & Karaoke</dd>
+                            <dt>October 14th 2025</dt>
+                            <!--
+                            <dd>9am &ndash; Sundance Loop Ride</dd>
+                            <dd>3pm &ndash; Natural Hot Springs</dd>
+                            <dd>8pm &ndash; Sushi & Karaoke</dd>
+                            -->
                         </dl>
                         <p>
 						Ride up natural sulphur hot springs as we make our way to one of Banff’s national historic sites: the Cave and Basin.
                         Next, we'll trek along the tranquil Bow River and take in magnificent views of the Bow Valley before pressing through thick marshes as we climb Sulphur Mountain. Finally, we’ll continue up to Windy Knoll to take in the sweeping landscape.
+                        Finally, we'll re-convene in the evening for Sushi & Karaoke at a local favourite.
 						</p>
 					</div>
                     <div class="col-sm">
-                        <img class="rounded img-thumbnail img-fluid" src="photos/horses.png">
+                        <img class="img-fluid" src="photos/horses.png">
                     </div>
 				</div>
-				<br/><br/><br/><br/>
-                <div class="row">
+                <div class="row pb-5 mb-5 pt-5">
                     <div class="col-sm">
-                        <img class="rounded img-thumbnail img-fluid" src="photos/teahouse.png">
+                        <img class="img-fluid" src="photos/teahouse.png">
                     </div>
                     <div class="col-sm my-auto">
                         <dl>
-                            <dt>October 14th, 2025</dt>
+                            <dt>October 15th, 2025</dt>
+                            <!--
                             <dd>(10am &ndash; 2pm) Lake Agnes Tea House Hike</dd>
                             <dd>(6pm &ndash; 9pm) </dd>
+                            -->
                         </dl>
                         <p>
 						The Lake Agnes Tea House, situated near Lake Louise at an altitude of 7,000 ft, was originally built in 1901 by the Canadian Pacific Railway as a refuge for hikers, and started serving tea in 1905.
@@ -209,11 +214,8 @@ a {
 						</p>
 					</div>
 				</div>
-				<br/><br/><br/><br/>
-                <hr>
-				<br/><br/><br/><br/>
-
 			</div>
+        <br/><br/><br/><br/><hr><br/><br/><br/><br/>
         </div>
 
         <div class="tab-pane container fade" id="accomodations">
@@ -221,16 +223,15 @@ a {
             <hr><br/>
 
             <div class="card-columns">
+
                 <!-- Fairmont -->
                 <div class="card shadow-sm">
-                <img class="card-img-top" src="photos/fairmont.png">
                 <div class="card-body">
-                <h5 class="card-title">Fairmont Banff Springs</h5>
-                <p class="card-title">The wedding venue, a UNESCO world heritage site built in the year 1888.</p>
-                </div>
-                <div class="card-footer">
-                <p style="font-weight: bold; color: red;">All guests provided 30% discount through link below.</p>
-                <p><a href="https://cwmr.info/pwed">Website</a></p>
+                <p class="card-title">
+                <h5 class="card-title">Booking your stay in Banff...</h5>
+                When booking hotels in Banff, you can't go wrong with any of the options on Banff Avenue; located in the heart of downtown, and only a 15 minute walk from the wedding venue.
+                There are also <a href="https://www.airbnb.com/s/Canmore--Alberta--Canada/homes?refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-06-01&monthly_length=3&monthly_end_date=2025-09-01&price_filter_input_type=2&channel=EXPLORE&place_id=ChIJMWNFlZXFcFMRLmkenl8xtkY&location_bb=QkyI08Lmce1CTAGTwubdZA%3D%3D&acp_id=264550bd-3ee1-4530-8b11-0b90a2c5c4ba&date_picker_type=calendar&checkin=2025-10-13&checkout=2025-10-17&source=structured_search_input_header&search_type=autocomplete_click">Airbnb</a> options in the neighbouring town of Canmore, which is only a 15 minute drive away.
+                </p>
                 </div>
                 </div>
 
@@ -239,10 +240,8 @@ a {
                 <img class="card-img-top" src="photos/rimrock.png">
                 <div class="card-body">
                 <h5 class="card-title">Rimrock Hotel</h5>
-                <p class="card-title">Peaceful resort on the Bow river; only a few minutes from the wedding venue.</p>
-                </div>
-                <div class="card-footer">
-                <p style="font-weight: bold; color: red;">All guests provided 30% discount through link below.</p>
+                <b>All guests provided 30% discount through booking link.</b>
+                <p class="card-title">Peaceful 5 star resort on the Bow river; located only a few minutes away from the wedding venue.</p>
                 <p><a href="https://cwmr.info/pwed">Website</a></p>
                 </div>
                 </div>
@@ -252,10 +251,61 @@ a {
                 <img class="card-img-top" src="photos/peaks.png">
                 <div class="card-body">
                 <h5 class="card-title">Peak's Hotel & Suites</h5>
-                <p class="card-title">Full-service lodge with mountain views located only a few minutes away from the wedding venue.</p>
+                <p class="card-title">Full-service lodge with incredible mountain views; located on Banff Avenue, only a few minutes away from the wedding venue.</p>
                 </div>
                 <div class="card-footer">
                 <p><a href="https://www.peaksbanff.com/roomsandsuites">Website</a></p>
+                </div>
+                </div>
+
+                <!-- Mount Royal -->
+                <div class="card shadow-sm">
+                <img class="card-img-top" src="photos/mountroyal.png">
+                <div class="card-body">
+                <h5 class="card-title">Mount Royal Hotel</h5>
+                <p class="card-title">Winner of 2024 Tripadvisor Travellers' choice award; located on Banff Avenue, only a few minutes away from the wedding venue.
+                </p>
+                </div>
+                <div class="card-footer">
+                <p><a href="https://www.banffjaspercollection.com/hotels/mount-royal-hotel/">Website</a></p>
+                </div>
+                </div>
+
+                <!-- Fairmont -->
+                <div class="card shadow-sm">
+                <img class="card-img-top" src="photos/fairmont.png">
+                <div class="card-body">
+                <h5 class="card-title">Fairmont Banff Springs</h5>
+                <b>All guests provided 30% discount through booking link.</b>
+                <p class="card-title">The wedding venue, a UNESCO world heritage site built in the year 1888, located in the heart of Baff National Park.</p>
+                <p><a href="https://cwmr.info/pwed">Website</a></p>
+                </div>
+                </div>
+
+                <!-- Moxy -->
+                <div class="card shadow-sm">
+                <img class="card-img-top" src="photos/moxy.png">
+                <div class="card-body">
+                <h5 class="card-title">Moxy Banff</h5>
+                <p class="card-title">
+                A boutique-style hotel from Marriott; located on Banff Avenue, only a few minutes away from the wedding venue.
+                </p>
+                </div>
+                <div class="card-footer">
+                <p><a href="https://www.marriott.com/en-us/hotels/yycbm-moxy-banff/overview/">Website</a></p>
+                </div>
+                </div>
+
+                <!-- Moose -->
+                <div class="card shadow-sm">
+                <img class="card-img-top" src="photos/moose.png">
+                <div class="card-body">
+                <h5 class="card-title">Moose Hotel & Suites</h5>
+                <p class="card-title">Full-service hotel featuring a spa center and swimming pool; located on Banff Avenue, only a few minutes away from the wedding venue.
+                </p>
+                </div>
+                <div class="card-footer">
+                <p><a href="https://www.hotelsone.com/banff-hotels-ca/moose-hotel-and-suites.html">Website</a></p>
                 </div>
                 </div>
 
@@ -264,14 +314,19 @@ a {
                 <img class="card-img-top" src="photos/canalta.png">
                 <div class="card-body">
                 <h5 class="card-title">Canalta Lodge</h5>
-                <p class="card-title">Full-service lodge with in-room kitchenette; only a few minutes away from the wedding venue.</p>
+                <p class="card-title">Full-service lodge with in-room kitchenette; located on Banff Avenue, only a few minutes away from the wedding venue.
+                </p>
                 </div>
                 <div class="card-footer">
                 <p><a href="https://canaltalodge.com/">Website</a></p>
                 </div>
                 </div>
 
+
+
             </div>
+
+        <br/><br/><br/><br/><hr><br/><br/><br/><br/>
         </div>
 
     </div>
